@@ -4,17 +4,19 @@ This is a repo showing projects with computer vision Implementation & NLP done i
 
 Kaggle Profile: https://www.kaggle.com/jimysalem/code
 
-# Insight on the Repo - Computer Vision & NLP
+# Insight on the Repo
 
-The dataset given by Kaggle showcases images concerned with the face expression of people
+The dataset provided by Kaggle showcases images related to people's facial expressions.
 
-The datset for NLP given also by Kaggle
+The dataset for NLP is also provided by Kaggle.
+
+For the machine learning and visualization projects: the datasets consist of two parts. The first part consists of instances of hourly average responses of five metal oxide chemical sensors. The second part aims to classify people described by a set of attributes as good or bad credit risks.
 
 # Computer Vision:
 
 ## Dataset Issues - Computer Vision Trials:
 
-The first trial was done by using 6000 random images it shows that there are class imbalances and therefore the second strategy in trial 2 is to pick a good number that will showcase a balance between classes.
+The first trial used 6000 random images and revealed class imbalances. Therefore, the strategy in the second trial was to select a balanced number of images between classes.
 
 ## Models Used and their issues - Computer Vision
 
@@ -30,10 +32,31 @@ The first trial was done by using 6000 random images it shows that there are cla
 
 ## Models Used and their issues:
 
-All of the models are state of the art for NLP and are experiencing overfitting:
-1. CNN: which preformed the best
-2. Transformers & Others: captured few classes while not identifying the others 
+All of the models are state-of-the-art for NLP and experienced overfitting:
+
+1. CNN: Performed the best.
+2. Transformers & Others: Captured a few classes while not identifying others.
 
 ## Solution - NLP:
 
 Use a CNN which got to 70+%accuracy
+
+# Machine Learning & Visualisation
+
+## Part 1:
+
+The dataset represents the target output as numerical. An EDA was performed on the dataset and visualization was done, including a covariance matrix showing a strong linear relationship between variables and the ground truth explaining most of the dataset.
+
+### Models Used:
+
+Various models were used, showcasing issues with overfitting. The best models were chosen based on features and ground truth variables that are to be predicted.
+
+## Part 2:
+
+The dataset shows obvious issues with class imbalances, which will affect the machine learning models used.
+
+The target variable was not initially identified or provided in the dataset but was chosen to avoid imbalance.
+
+### Models Used:
+
+Random Forest showed the best performance, and SHAP values were later analyzed, showing some differences, but overall class imbalance affects the models.
