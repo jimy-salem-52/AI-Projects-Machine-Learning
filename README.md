@@ -12,6 +12,8 @@ The dataset for NLP is also provided by Kaggle.
 
 For the machine learning and visualization projects: the datasets consist of two parts. The first part consists of instances of hourly average responses of five metal oxide chemical sensors. The second part aims to classify people described by a set of attributes as good or bad credit risks.
 
+Music Genre Classifier: the dataset shows multiple features concerning the Fourier transform features and others to indentify the music genre.
+
 # Computer Vision:
 
 ## Dataset Issues - Computer Vision Trials:
@@ -51,7 +53,7 @@ The dataset represents the target output as numerical. An EDA was performed on t
 
 Various models were used, showcasing issues with overfitting. The best models were chosen based on features and ground truth variables that are to be predicted.
 
-## Part 2:
+## Part 2:ng MLP
 
 The dataset shows obvious issues with class imbalances, which will affect the machine learning models used.
 
@@ -60,3 +62,13 @@ The target variable was not initially identified or provided in the dataset but 
 ### Models Used:
 
 Random Forest showed the best performance, and SHAP values were later analyzed, showing some differences, but overall class imbalance affects the models.
+
+# Music Genre - Classifier
+
+## Dataset:
+
+The dataset contains features extracted from the Fourier Transform of audio files, which are used to predict the music genre label. An Exploratory Data Analysis (EDA) was performed, along with Principal Component Analysis (PCA) to reduce the dimensionality of the dataset. The PCA identified the features that account for 95% of the data variance.
+
+## Models Used: 
+
+Several models were experimented with, and their performances were compared. The Multi-Layer Perceptron (MLP) model performed the best among the models tested 
