@@ -4,7 +4,7 @@ This is a repo showing projects with computer vision Implementation & NLP done i
 
 Kaggle Profile: https://www.kaggle.com/jimysalem/code
 
-# Insight on the Repo
+# Insight on the Repos
 
 The dataset provided by Kaggle showcases images related to people's facial expressions.
 
@@ -14,11 +14,17 @@ For the machine learning and visualization projects: the datasets consist of two
 
 Music Genre Classifier: the dataset shows multiple features concerning the Fourier transform features and others to indentify the music genre.
 
+Butter Fly Types: the dataset can be found on Kaggle with the notebook50d936f0a9 showing files containing the different butterflies images and a csv with the corresponding labels 
+
 # Computer Vision:
 
 ## Dataset Issues - Computer Vision Trials:
 
 The first trial used 6000 random images and revealed class imbalances. Therefore, the strategy in the second trial was to select a balanced number of images between classes.
+
+## Butterfly Dataset:
+
+The trial was done using 3000 images with the 75 unique labels generated. One of the issues is generating the evaluation and it will be challenging to perceive the 75 different unique labels, therefore a plotting of training/test accuracy and training/test loss showed the best model 
 
 ## Models Used and their issues - Computer Vision
 
@@ -26,6 +32,12 @@ The first trial used 6000 random images and revealed class imbalances. Therefore
 2. ResNet50: ResNet50 is one of the most used and widely recognized CNN. It is a pretrained model used for tasks requiring high accuracy. the accuracy achieved is 41%
 3. Due to memory errors: NasNet wasn't applied
 4. Instead a CNN that was applied similar to NasNet was used but wih little accuracy of 31%
+
+## Butterfly - Models Used
+
+1. A Custom CNN which showed a clear overfitting
+2. VGG 16 showing the best accuracy out of all the other models showing convergence in the training and validation losses showing strong performance.
+3. ResNet 50 showing lower accuracy due to the graph that lacks smoothness and high values in the loss curves showing struggles to generalize well on the datset
 
 ## Solution - Computer Vision
 1. Identified a CNN for 62% accuracy
