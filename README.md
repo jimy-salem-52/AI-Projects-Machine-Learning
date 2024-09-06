@@ -65,7 +65,7 @@ The dataset represents the target output as numerical. An EDA was performed on t
 
 Various models were used, showcasing issues with overfitting. The best models were chosen based on features and ground truth variables that are to be predicted.
 
-## Part 2:ng MLP
+## Part 2:
 
 The dataset shows obvious issues with class imbalances, which will affect the machine learning models used.
 
