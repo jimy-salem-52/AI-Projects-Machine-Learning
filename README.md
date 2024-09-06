@@ -22,10 +22,6 @@ Butter Fly Types: the dataset can be found on Kaggle with the notebook50d936f0a9
 
 The first trial used 6000 random images and revealed class imbalances. Therefore, the strategy in the second trial was to select a balanced number of images between classes.
 
-## Butterfly Dataset:
-
-The trial was done using 3000 images with the 75 unique labels generated. One of the issues is generating the evaluation and it will be challenging to perceive the 75 different unique labels, therefore a plotting of training/test accuracy and training/test loss showed the best model 
-
 ## Models Used and their issues - Computer Vision
 
 1. ViT: judging from the confusion matrix, some classes weren't identified , ViT requires a high number of data that wasn't represented in this project
@@ -33,14 +29,18 @@ The trial was done using 3000 images with the 75 unique labels generated. One of
 3. Due to memory errors: NasNet wasn't applied
 4. Instead a CNN that was applied similar to NasNet was used but wih little accuracy of 31%
 
+## Solution - Computer Vision
+1. Identified a CNN for 62% accuracy
+
+## Butterfly Dataset:
+
+The trial was done using 3000 images with the 75 unique labels generated. One of the issues is generating the evaluation and it will be challenging to perceive the 75 different unique labels, therefore a plotting of training/test accuracy and training/test loss showed the best model 
+
 ## Butterfly - Models Used
 
 1. A Custom CNN which showed a clear overfitting
 2. VGG 16 showing the best accuracy out of all the other models showing convergence in the training and validation losses showing strong performance.
 3. ResNet 50 showing lower accuracy due to the graph that lacks smoothness and high values in the loss curves showing struggles to generalize well on the datset
-
-## Solution - Computer Vision
-1. Identified a CNN for 62% accuracy
 
 # NLP:
 
